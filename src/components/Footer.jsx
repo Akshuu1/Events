@@ -15,11 +15,11 @@ const Footer = () => (
                         <span className="logo-star">✦</span>
                         <div className="logo-wrap">
                             <span className="name">LUMIÈRE</span>
-                            <span className="sub">ARCHITECTS</span>
+                            <span className="sub">ORGANIZERS</span>
                         </div>
                     </div>
                     <p className="footer-v11__lead">
-                        Managing high-stakes global productions with architectural precision. From palace logistics to stadium-scale summits.
+                        Managing high-stakes global productions with technical precision. From palace logistics to stadium-scale summits.
                     </p>
                     <div className="footer-v11__social-shards">
                         {['IG', 'PI', 'LI', 'YT'].map(s => (
@@ -30,9 +30,9 @@ const Footer = () => (
 
                 {/* Services Shard */}
                 <div className="footer-v11__shard reveal" style={{ transitionDelay: '0.1s' }}>
-                    <h4 className="footer-v11__h4">Managed Tiers</h4>
+                    <h4 className="footer-v11__h4">Solutions</h4>
                     <ul className="footer-v11__list">
-                        {['Global Logistics', 'Production Mapping', 'C-Suite Galas', 'Royal Weddings', 'Jurisdiction Experts'].map(item => (
+                        {['Logistics Management', 'Production Mapping', 'Vendor Control', 'On-site Execution', 'Technical Design'].map(item => (
                             <li key={item}><Link to="/services">{item}</Link></li>
                         ))}
                     </ul>
@@ -61,9 +61,9 @@ const Footer = () => (
                 <div className="footer-v11__shard footer-v11__shard--cta reveal" style={{ transitionDelay: '0.3s' }}>
                     <h4 className="footer-v11__h4">Inquiries</h4>
                     <p className="footer-v11__p">Current queue: Late 2026</p>
-                    <a href="mailto:hello@lumiere.co.in" className="footer-v11__email">hello@lumiere.co.in</a>
+                    <a href="mailto:hq@lumiere-organizers.com" className="footer-v11__email">hq@lumiere-organizers.com</a>
                     <Link to="/contact" className="btn-v11-shard">
-                        <span>Initialize Consultation</span>
+                        <span>Initialize Production</span>
                         <span className="arrow">→</span>
                     </Link>
                 </div>
@@ -74,12 +74,12 @@ const Footer = () => (
         <div className="footer-v11__bottom">
             <div className="wrap footer-v11__bottom-inner">
                 <div className="legal">
-                    <span>© 2026 LUMIÈRE ARCHITECTS</span>
+                    <span>© 2026 LUMIÈRE ORGANIZERS</span>
                     <span className="sep">|</span>
                     <span>PRIVACY ARCHIVE</span>
                 </div>
                 <div className="credits">
-                    ARCHITECTING EXPERIENCES GLOBALLY
+                    ORGANIZING EXPERIENCES GLOBALLY
                 </div>
             </div>
         </div>

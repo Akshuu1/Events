@@ -22,7 +22,7 @@ const Navbar = () => {
                         <span className="logo-icon">✦</span>
                         <div className="logo-text">
                             <span className="name">LUMIÈRE</span>
-                            <span className="sub">ARCHITECTS</span>
+                            <span className="sub">ORGANIZERS</span>
                         </div>
                     </Link>
 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="drawer__footer">
-                    <p>© 2026 LUMIÈRE ARCHITECTS</p>
+                    <p>© 2026 LUMIÈRE ORGANIZERS</p>
                     <div className="drawer__socials">
                         <span>IG</span> · <span>LI</span> · <span>TW</span>
                     </div>

@@ -18,16 +18,16 @@ const Hero = () => (
             {/* Left */}
             <div className="hero__left">
                 <div className="hero__label-wrap">
-                    <span className="label">India's Premier Event Studio</span>
+                    <span className="label">Full-Service Event Organizing</span>
                 </div>
                 <h1 className="hero__h1">
-                    We Turn Your <br />
-                    Vision Into An<br />
-                    <em className="italic-gold">Unforgettable</em><br />
-                    Celebration.
+                    The Art of <br />
+                    Flawless <br />
+                    <em className="italic-gold">Event</em> <br />
+                    Production.
                 </h1>
                 <p className="hero__p">
-                    From intimate ceremonies to grand galas — LUMIÈRE architects bespoke experiences across weddings, corporate events, and private celebrations in India and beyond.
+                    From ground-breaking corporate summits to iconic weddings — LUMIÈRE organizes every detail with technical precision and unmatched logistics management.
                 </p>
                 <div className="hero__btns">
                     <Link to="/contact" className="btn-dark">Start Planning ↗</Link>
@@ -74,11 +74,11 @@ const Hero = () => (
         {/* Scrolling event types ticker */}
         <div className="hero__ticker">
             <div className="ticker__track">
-                {['Wedding Planning', 'Venue Styling', 'Corporate Galas', 'Floral Design', 'Destination Events', 'Catering & Hospitality', 'Photo & Video', 'Guest Management', 'Live Entertainment', 'Sound & Lighting'].map(t => (
+                {['Wedding Planning', 'Brand Activations', 'Concept Development', 'Floral Artistry', 'Destination Planning', 'Gourmet Catering', 'Media Production', 'Guest Experience', 'Live Entertainment', 'Atmospheric Lighting'].map(t => (
                     <span key={t} className="ticker__item">{t} <span className="ticker__dot">✦</span></span>
                 ))}
                 {/* Duplicate for seamless loop */}
-                {['Wedding Planning', 'Venue Styling', 'Corporate Galas', 'Floral Design', 'Destination Events', 'Catering & Hospitality', 'Photo & Video', 'Guest Management', 'Live Entertainment', 'Sound & Lighting'].map(t => (
+                {['Wedding Planning', 'Brand Activations', 'Concept Development', 'Floral Artistry', 'Destination Planning', 'Gourmet Catering', 'Media Production', 'Guest Experience', 'Live Entertainment', 'Atmospheric Lighting'].map(t => (
                     <span key={t + '_dup'} className="ticker__item">{t} <span className="ticker__dot">✦</span></span>
                 ))}
             </div>

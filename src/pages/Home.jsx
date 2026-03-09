@@ -4,9 +4,9 @@ import Gallery from '../components/Gallery';
 import './Home.css';
 
 const testimonials = [
-    { name: 'Priya M.', event: 'Wedding · Udaipur Logistics', quote: "LUMIÈRE managed our 800-guest palace wedding with zero latency. Their logistics team is unmatched." },
-    { name: 'Raj Sharma', event: 'Corporate Summit · Mumbai', quote: "The strategic planning and vendor coordination was flawless. They handled the high-stakes production with ease." },
-    { name: 'Anita K.', event: 'Global Gala · Dubai', quote: "Their ability to coordinate international teams and jurisdictions saved us weeks of stress. Elite management." },
+    { name: 'Aditi V.', event: 'Royal Wedding · Udaipur Logistics', quote: "LUMIÈRE managed our 1,200-guest wedding across multiple venues with zero latency. Their organizing team is peerless." },
+    { name: 'Karan Mehra', event: 'Tech Summit · Mumbai Production', quote: "The most complex corporate production we've ever successfully executed. Their vendor management and on-site control is elite." },
+    { name: 'Sara Khan', event: 'Global Gala · Dubai Coordination', quote: "Elegance, precision, and flawless logistical oversight. LUMIÈRE is the standard for high-stakes event coordination." },
 ];
 
 const Home = () => (
@@ -15,25 +15,22 @@ const Home = () => (
 
         {/* Management Excellence Pivot */}
         <Services
-            title="Management Excellence"
-            description="Elite event management is about the invisible machinery. We provide total logistical oversight, vendor synchronized coordination, and high-pressure production management."
+            title="Organizing Excellence"
+            description="Elite event production is about the invisible machinery. We provide total logistical oversight, synchronized coordination, and high-pressure project management."
         />
 
         {/* Philosophy Pull-Quote */}
         <section className="philosophy-pull wrap section-pad">
-            <div className="pull-card reveal">
-                <span className="label">The Mandate</span>
-                <h2 className="pull-h2">
-                    "Control is not about <em className="italic-gold">dominance</em>, it is about <em className="italic-gold">predictability</em> in the face of chaos."
-                </h2>
-                <div className="pull-author">— LUMIÈRE Management Doctrine</div>
-            </div>
+            <h2 className="pull-h2">
+                "Organizing is not about <em className="italic-gold">command</em>, it is about <em className="italic-gold">predictability</em> in the face of complex variables."
+            </h2>
+            <div className="pull-author">— LUMIÈRE Management Doctrine</div>
         </section>
 
         {/* Exhibition Shard Preview */}
         <Gallery
-            title="The Exhibition"
-            description="A glimpse into the complex logistical triumphs of our management team. From multi-day international summits to high-security private milestones."
+            title="The Archive"
+            description="A glimpse into the complex logistical triumphs of our organizing team. From multi-day international summits to high-security private milestones."
             limit={2}
         />
 
@@ -42,9 +39,9 @@ const Home = () => (
             <div className="legacy-grid">
                 <div className="legacy-shard legacy-shard--left reveal">
                     <span className="label">18 Year Operational History</span>
-                    <h2 className="legacy-h2">A Legacy Of <br /><em className="italic-gold">Unseen</em> Precision.</h2>
+                    <h2 className="legacy-h2">A Legacy Of <br /><em className="italic-gold">Technical</em> Precision.</h2>
                     <p className="legacy-p">
-                        Founded in 2008, LUMIÈRE began as a small logistics collective in Mumbai. Today, we are a global production powerhouse, managing the world's most complex celebrations. Our legacy is built on the rigorous technical standards of our founders — where every millisecond of an event is architected.
+                        Founded in 2008, LUMIÈRE began as a small logistics collective in Mumbai. Today, we are a global production powerhouse, organizing the world's most complex celebrations. Our legacy is built on the rigorous technical standards of our founders — where every millisecond of an event is architected.
                     </p>
                     <div className="legacy-stats">
                         <div className="legacy-stat">
@@ -72,7 +69,7 @@ const Home = () => (
             <div className="wrap">
                 <div className="reveal" style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <span className="label">Logistics Verified</span>
-                    <h2 style={{ fontSize: 'clamp(2rem,3vw,3rem)' }}>Strategic <em className="italic-gold">Testimonials.</em></h2>
+                    <h2 style={{ fontSize: 'clamp(2rem,3vw,3rem)' }}>Exceptional <em className="italic-gold">Success Rate.</em></h2>
                 </div>
                 <div className="testi-grid">
                     {testimonials.map((t, i) => (
@@ -98,7 +95,7 @@ const Home = () => (
                 </div>
                 <div className="cta-banner__actions">
                     <a href="/contact" className="btn-dark" style={{ fontSize: '0.85rem' }}>Start Production Mapping ↗</a>
-                    <a href="tel:+919876543210" className="btn-outline-dark" style={{ fontSize: '0.85rem' }}>Logistics Line</a>
+                    <a href="tel:+919876543210" className="btn-outline-dark" style={{ fontSize: '0.85rem' }}>Management Line</a>
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ const PortfolioPage = () => {
                 </div>
 
                 <div className="wrap">
-                    <span className="label reveal">The Management Exhibit</span>
+                    <span className="label reveal">The Operational Archive</span>
                     <h1 className="portfolio-h1 reveal">
                         The Artifacts of <br />
                         <em className="italic-gold">Successful</em> Production.
@@ -48,30 +48,30 @@ const PortfolioPage = () => {
                         <span>Latencies</span>
                     </div>
                     <div className="meta-item">
-                        <strong>10k+</strong>
-                        <span>Vendor Network</span>
+                        <strong>100%</strong>
+                        <span>Success Rate</span>
                     </div>
                     <div className="meta-item">
-                        <strong>Full</strong>
-                        <span>Jurisdiction</span>
+                        <strong>Elite</strong>
+                        <span>Logistics</span>
                     </div>
                 </div>
                 <p className="intro-text">
-                    This exhibition is a record of operational precision. We detail the logistical challenges overcome in every project, from temporary structure engineering to global supply chain coordination.
+                    This archive is a record of operational precision. We detail the logistical challenges overcome in every project, from temporary structure engineering to global supply chain coordination.
                 </p>
             </div>
 
             <Gallery
                 filter={filter}
-                title="The Deep Management Archive"
-                description="Explore our complete history from a coordinate and logistical perspective. Each project is an operational landmark."
+                title="The Production Archive"
+                description="Explore our complete history of operational landmarks. Each project is a testament to flawless coordination."
             />
 
             <section className="portfolio-cta section-pad">
                 <div className="wrap glass portfolio-cta__banner reveal">
                     <div className="cta-text">
-                        <h2>Scale your next event with <em className="italic-gold">operational</em> security.</h2>
-                        <p>Our senior project managers are available for worldwide deployment.</p>
+                        <h2>Secure your next event with <em className="italic-gold">operational</em> certainty.</h2>
+                        <p>Our senior project managers are available for global deployment.</p>
                     </div>
                     <button className="btn-dark">Consult Production</button>
                 </div>

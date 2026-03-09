@@ -35,8 +35,8 @@ const ContactPage = () => {
                 {/* Left Floating Shard Info */}
                 <div className="v7-shard-info">
                     <div className="shard-top-left reveal">
-                        <span className="label">The Concierge</span>
-                        <h1 className="v7-h1">Let's <br />Sculpt Your <br /><em className="italic-gold">Legacy.</em></h1>
+                        <span className="label">The Bureau</span>
+                        <h1 className="v7-h1">Let's <br />Organize Your <br /><em className="italic-gold">Success.</em></h1>
                     </div>
 
                     <div className="v7-stat-shard reveal" style={{ transitionDelay: '0.2s' }}>
@@ -47,7 +47,7 @@ const ContactPage = () => {
 
                     <div className="v7-detail-shard reveal" style={{ transitionDelay: '0.4s' }}>
                         <div className="shard-poly-alt"></div>
-                        <p>📧 concierge@lumiere-events.co.in</p>
+                        <p>📧 logistics@lumiere-organizers.com</p>
                         <p>📞 +91 98765 43210</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const ContactPage = () => {
                     <div className="form-poly-bg"></div>
                     <div className="form-content">
                         <h3 className="v7-form-title">The Inquiry</h3>
-                        <p className="v7-form-sub">Architecting your experience begins with a single transmit.</p>
+                        <p className="v7-form-sub">Architecting your production begins with a single transmit.</p>
 
                         <form className="v7-form" onSubmit={(e) => e.preventDefault()}>
                             <div className="v7-form-grid">
@@ -75,10 +75,10 @@ const ContactPage = () => {
                                 <label>The Context</label>
                                 <select required>
                                     <option value="" disabled selected>Select Event Archetype</option>
-                                    <option>Grand Wedding</option>
-                                    <option>Corporate Gala</option>
-                                    <option>Private Soiree</option>
-                                    <option>International Milestone</option>
+                                    <option>Corporate Summit</option>
+                                    <option>Large Scale Wedding</option>
+                                    <option>Private Milestone</option>
+                                    <option>International Production</option>
                                 </select>
                             </div>
 
