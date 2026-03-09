@@ -1,0 +1,296 @@
+/* Contact Page v7 — 3D Shard Sculpture */
+.contact-v7 {
+    min-height: 100vh;
+    background: var(--off-white);
+    padding: 140px 0 80px;
+    position: relative;
+    overflow: hidden;
+    perspective: 2000px;
+}
+
+.v7-bg-shape {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background:
+        radial-gradient(circle at 10% 10%, var(--blush) 0%, transparent 40%),
+        radial-gradient(circle at 90% 90%, var(--green) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, var(--cream) 0%, transparent 50%);
+    opacity: 0.3;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.contact-v7__bg-shards {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.contact-v7__bg-shards .bg-shard {
+    position: absolute;
+    background: rgba(184, 219, 128, 0.05);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: floating 15s infinite ease-in-out;
+}
+
+.bg-shard--1 {
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    right: -50px;
+    clip-path: polygon(0% 15%, 100% 0%, 85% 100%, 15% 85%);
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    50% {
+        transform: translate(-30px, 30px) rotate(8deg);
+    }
+}
+
+.v7-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 4vw;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+}
+
+/* Info Side */
+.v7-shard-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    transform-style: preserve-3d;
+}
+
+.v7-h1 {
+    font-size: clamp(3rem, 5.5vw, 4.8rem);
+    margin-top: 1rem;
+    transform: translateZ(80px);
+}
+
+.v7-stat-shard {
+    position: relative;
+    padding: 2.5rem;
+    width: fit-content;
+    transform: translateZ(50px);
+}
+
+.shard-poly {
+    position: absolute;
+    inset: 0;
+    background: var(--black);
+    clip-path: polygon(15% 0%, 100% 10%, 85% 100%, 0% 90%);
+    z-index: -1;
+    transition: transform 0.4s ease;
+}
+
+.v7-stat-shard:hover .shard-poly {
+    transform: scale(1.05) rotate(2deg);
+}
+
+.v7-stat-shard strong {
+    display: block;
+    font-family: var(--font-h);
+    font-size: 3rem;
+    color: var(--green);
+    line-height: 1;
+}
+
+.v7-stat-shard span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.v7-detail-shard {
+    position: relative;
+    padding: 1.5rem 2.5rem;
+    width: fit-content;
+    transform: translateZ(30px);
+}
+
+.shard-poly-alt {
+    position: absolute;
+    inset: 0;
+    background: var(--rose);
+    clip-path: polygon(0% 10%, 95% 0%, 100% 90%, 5% 100%);
+    z-index: -1;
+    opacity: 0.85;
+}
+
+.v7-detail-shard p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 6px 0;
+}
+
+/* Form Side */
+.v7-shard-form {
+    position: relative;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateZ(100px);
+    /* The "Shattered" Shape */
+    clip-path: polygon(5% 0%, 100% 3%, 95% 100%, 0% 97%);
+    border: 1px solid rgba(184, 219, 128, 0.3);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.1);
+}
+
+.v7-form-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.v7-form-sub {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+.v7-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.v7-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.v7-fg {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.v7-fg label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--green-deep);
+}
+
+.v7-fg input,
+.v7-fg select,
+.v7-fg textarea {
+    background: rgba(184, 219, 128, 0.08);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    font-family: var(--font-b);
+    font-size: 1rem;
+    color: var(--black);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.v7-fg input:focus,
+.v7-fg select:focus,
+.v7-fg textarea:focus {
+    border-bottom-color: var(--green-deep);
+    background: rgba(184, 219, 128, 0.15);
+    padding-left: 10px;
+}
+
+.v7-btn-submit {
+    background: var(--black);
+    color: white;
+    padding: 1.2rem;
+    border: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    overflow: hidden;
+    clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+}
+
+.v7-btn-submit:hover {
+    background: var(--green-deep);
+    color: var(--black);
+}
+
+/* Bottom locations Shard */
+.v7-bottom-shard {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.locations-shard {
+    background: var(--cream);
+    padding: 1rem 4rem;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    gap: 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.locations-shard span {
+    color: var(--black);
+}
+
+@media (max-width: 1000px) {
+    .v7-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        text-align: center;
+    }
+
+    .v7-shard-info {
+        align-items: center;
+    }
+
+    .v7-stat-shard {
+        margin: 0 auto;
+    }
+
+    .v7-detail-shard {
+        margin: 0 auto;
+    }
+
+    .v7-shard-form {
+        padding: 3rem 1.5rem;
+        clip-path: none;
+        border-radius: 12px;
+        text-align: left;
+    }
+
+    .v7-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .v7-bottom-shard {
+        display: none;
+    }
+}

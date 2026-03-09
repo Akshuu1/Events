@@ -1,0 +1,119 @@
+.services-v8 {
+    background: var(--off-white);
+}
+
+.services-v8__head {
+    max-width: 800px;
+    margin-bottom: 6rem;
+    border-left: 4px solid var(--green);
+    padding-left: 3rem;
+}
+
+.v8-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+
+.v8-desc {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+.services-v8__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    perspective: 1500px;
+}
+
+.svc-shard {
+    padding: 4rem 3rem;
+    min-height: 480px;
+    position: relative;
+    transition: transform 0.15s ease-out, box-shadow 0.4s ease;
+    will-change: transform;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.svc-shard:hover {
+    box-shadow: 0 30px 60px rgba(184, 219, 128, 0.2);
+}
+
+.svc-shard__inner {
+    position: relative;
+    z-index: 2;
+}
+
+.svc-shard__id {
+    position: absolute;
+    top: -60px;
+    right: -20px;
+    font-family: var(--font-h);
+    font-size: 6rem;
+    opacity: 0.15;
+    line-height: 1;
+}
+
+.svc-shard__h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.svc-shard__p {
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 320px;
+}
+
+.svc-shard__link {
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+.svc-shard__link:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+    .services-v8__head {
+        margin-bottom: 4rem;
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+        border-top: 4px solid var(--green);
+        padding-top: 2rem;
+    }
+
+    .v8-desc {
+        margin: 0 auto;
+    }
+
+    .services-v8__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .svc-shard {
+        min-height: auto;
+        clip-path: none !important;
+        border-radius: 16px;
+        padding: 3rem 2rem;
+    }
+
+    .svc-shard__id {
+        top: -40px;
+        right: 10px;
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,248 @@
+/* ─── Philosophy Pull-Quote (v11) ─── */
+.philosophy-pull {
+    padding: 10rem 0;
+}
+
+.pull-card {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.pull-h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+.pull-author {
+    font-size: 0.8rem;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--green-deep);
+}
+
+.pull-card::before {
+    content: "“";
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-h);
+    font-size: 15rem;
+    color: var(--rose);
+    opacity: 0.1;
+    line-height: 1;
+}
+
+/* ─── Management Legacy (v12) ─── */
+.legacy-section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, transparent, var(--blush), transparent);
+}
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.legacy-h2 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    margin-bottom: 2.5rem;
+}
+
+.legacy-p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+.legacy-stats {
+    display: flex;
+    gap: 4rem;
+}
+
+.legacy-stat strong {
+    display: block;
+    font-family: var(--font-h);
+    font-size: 3rem;
+    color: var(--black);
+    line-height: 1;
+}
+
+.legacy-stat span {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color: var(--green-deep);
+}
+
+.legacy-img-wrap {
+    position: relative;
+    height: 600px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.15);
+}
+
+.legacy-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--black) 0%, transparent 50%);
+    opacity: 0.6;
+}
+
+.legacy-tag {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* ─── Testimonials ─── */
+.testimonials {
+    padding: 8rem 0;
+    background: var(--cream);
+}
+
+.testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.testi-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s var(--ease-spring);
+}
+
+.testi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(243, 158, 182, 0.1);
+}
+
+.testi-quote {
+    font-family: var(--font-h);
+    font-size: 1.15rem;
+    color: var(--black);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.testi-meta {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.testi-meta strong {
+    color: var(--black);
+}
+
+.testi-stars {
+    margin-top: 1rem;
+    color: var(--rose);
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+
+/* ─── CTA Banner ─── */
+.cta-banner {
+    background: var(--green);
+    padding: 8rem 0;
+}
+
+.cta-banner__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5rem;
+    align-items: center;
+}
+
+.cta-banner__h2 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    margin: 1.5rem 0 2rem;
+}
+
+.cta-banner p {
+    font-size: 1.1rem;
+    color: var(--black-soft);
+    max-width: 450px;
+    opacity: 0.8;
+}
+
+.cta-banner__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .legacy-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .legacy-p {
+        margin: 0 auto 3rem;
+    }
+
+    .legacy-stats {
+        justify-content: center;
+    }
+
+    .legacy-img-wrap {
+        height: 450px;
+        clip-path: none;
+        border-radius: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .philosophy-pull {
+        padding: 5rem 1rem;
+    }
+
+    .pull-h2 {
+        font-size: 2.2rem;
+    }
+
+    .testi-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cta-banner {
+        padding: 5rem 1rem;
+        text-align: center;
+    }
+
+    .cta-banner__inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .cta-banner p {
+        margin: 0 auto;
+    }
+
+    .cta-banner__actions {
+        align-items: center;
+    }
+}
