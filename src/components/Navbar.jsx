@@ -15,11 +15,10 @@ const Navbar = () => {
 
     return (
         <>
-            {/* Non-regular Asymmetric Fragment Navbar */}
             <header className={`nav-v7 ${scrolled ? 'nav-v7--scrolled' : ''}`}>
                 <div className="nav-v7__shard">
                     <Link to="/" className="nav-v7__logo">
-                        <img src="/assets/logo.png" alt="Epic Logo" className="nav-logo" />
+                        <span className="logo-icon">✦</span>
                         <div className="logo-text">
                             <span className="name">EPIC</span>
                             <span className="sub">EVENTS AND PROMOTION</span>

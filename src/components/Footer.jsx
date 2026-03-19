@@ -12,7 +12,7 @@ const Footer = () => (
                 {/* Brand Shard */}
                 <div className="footer-v11__shard footer-v11__shard--brand reveal">
                     <div className="footer-v11__logo">
-                        <img src="/assets/logo.png" alt="Epic Logo" className="footer-logo" />
+                        <span className="logo-star">✦</span>
                         <div className="logo-wrap">
                             <span className="name">EPIC</span>
                             <span className="sub">EVENTS AND PROMOTION</span>
