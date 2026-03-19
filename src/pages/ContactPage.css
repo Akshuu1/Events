@@ -294,3 +294,18 @@
         display: none;
     }
 }
+
+.status-msg {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status-msg.success {
+    color: var(--green-deep);
+}
+
+.status-msg.error {
+    color: #ff4b4b;
+}

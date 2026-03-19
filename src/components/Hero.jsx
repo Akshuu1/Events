@@ -18,24 +18,24 @@ const Hero = () => (
             {/* Left */}
             <div className="hero__left">
                 <div className="hero__label-wrap">
-                    <span className="label">Full-Service Event Organizing</span>
+                    <span className="label">Epic Events & Promotion — Founded by Ranbir Singh</span>
                 </div>
                 <h1 className="hero__h1">
-                    The Art of <br />
-                    Flawless <br />
-                    <em className="italic-gold">Event</em> <br />
-                    Production.
+                    Turning every <br />
+                    Vision into a <br />
+                    <em className="italic-gold">Flawless</em> <br />
+                    Reality.
                 </h1>
                 <p className="hero__p">
-                    From ground-breaking corporate summits to iconic weddings — LUMIÈRE organizes every detail with technical precision and unmatched logistics management.
+                    We don’t just manage events — we create experiences that people remember. Delivering excellence with 12+ years of rich industry expertise across India.
                 </p>
                 <div className="hero__btns">
-                    <Link to="/contact" className="btn-dark">Start Planning ↗</Link>
-                    <Link to="/portfolio" className="btn-outline-dark">See Our Work</Link>
+                    <Link to="/portfolio" className="btn-dark">Company Portfolio ↗</Link>
+                    <Link to="/contact" className="btn-outline-dark">Start Planning</Link>
                 </div>
                 {/* Stats row */}
                 <div className="hero__stats">
-                    {[['500+', 'Events'], ['18 yrs', 'Experience'], ['42', 'Countries'], ['98%', 'Satisfaction']].map(([n, l]) => (
+                    {[['1800+', 'Events'], ['12+ yrs', 'Experience'], ['Pan-India', 'Scale'], ['100%', 'Excellence']].map(([n, l]) => (
                         <div key={l} className="hero__stat">
                             <strong>{n}</strong>
                             <span>{l}</span>

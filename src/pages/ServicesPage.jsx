@@ -10,21 +10,17 @@ const ServicesPage = () => {
     return (
         <div className="services-page">
             <section className="services-hero">
-                {/* Floating Background Shards */}
-                <div className="services-hero__bg-shards">
-                    <div className="bg-shard bg-shard--1"></div>
-                    <div className="bg-shard bg-shard--2"></div>
-                </div>
+
 
                 <div className="wrap">
                     <div className="services-hero__content">
-                        <span className="label reveal">The Production Atelier</span>
+                        <span className="label reveal">Experience Excellence — Epic Events & Promotion</span>
                         <h1 className="services-hero__h1 reveal">
-                            The <em className="italic-gold">Manual</em> of <br />
-                            Grand Production.
+                            Turning <em className="italic-gold">Vision</em> into <br />
+                            Flawless Reality.
                         </h1>
                         <p className="services-hero__p reveal">
-                            Welcome to the workshop. Here, we break down the complex machinery of event architecture. Explore our tiered capabilities and the rigorous technical standards we apply to every single production.
+                            Founded in 2023 by Ranbir Singh, we bring 12+ years of industry experience to every project. From grand government gatherings to intimate personal milestones, we ensure every event is extraordinary.
                         </p>
                     </div>
                 </div>
@@ -32,22 +28,19 @@ const ServicesPage = () => {
 
             <div className="services-featured reveal">
                 <div className="wrap">
-                    <div className="featured-card glass"
-                        onMouseMove={e => { const r = e.currentTarget.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; requestAnimationFrame(() => { e.currentTarget.style.transform = `perspective(1000px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg)`; }); }}
-                        onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
-                    >
+                    <div className="featured-card glass">
                         <div className="featured-card__img">
-                            <img src="/assets/corporate.png" alt="Corporate Architecture" />
-                            <div className="photo-tag">Technical Prowess</div>
+                            <img src="/assets/corporate.png" alt="Government Events" />
+                            <div className="photo-tag">Mass-Scale Excellence</div>
                         </div>
                         <div className="featured-card__text">
-                            <h3>Mass-Scale Operational Multi-Units</h3>
-                            <p>Organizing events for 5,000+ attendees requires more than just planning; it requires structural engineering. Our team delivers zero-latency tech and massive spatial flows.</p>
+                            <h3>Pan-India Government & Corporate Scale</h3>
+                            <p>Managing events for 5,000+ attendees with a 360° network spread across the country. Our reach and expertise allow us to handle events of any scale with consistency.</p>
                             <ul className="spec-list">
-                                <li>✦ 3D Crowd Flow Dynamics</li>
-                                <li>✦ Kinetic Stage Engineering</li>
-                                <li>✦ Adaptive Lighting Networks</li>
-                                <li>✦ Real-time Production Sync</li>
+                                <li>✦ Government Ceremonies</li>
+                                <li>✦ High-Profile Corporate Summits</li>
+                                <li>✦ Strategic Election Campaigns</li>
+                                <li>✦ Mass-Scale Public Mobilization</li>
                             </ul>
                         </div>
                     </div>
@@ -55,8 +48,8 @@ const ServicesPage = () => {
             </div>
 
             <Services
-                title="Operational Tiers"
-                description="Our multi-layered service model ensures that whether you are hosting an intimate boardroom dinner or a stadium-level concert, the quality of execution remains elite."
+                title="Our Event Domains"
+                description="We offer a wide range of event management services tailored to your specific needs, ensuring professional execution no matter the location."
             />
 
             <section className="service-philosophy section-pad">

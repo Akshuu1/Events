@@ -9,6 +9,7 @@ import ContactPage from './pages/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 import CustomCursor from './components/CustomCursor';
 import DetailModal from './components/DetailModal';
+import GalleryPage from './pages/GalleryPage';
 import './App.css';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <main className="page-enter">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />

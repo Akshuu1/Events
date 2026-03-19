@@ -19,22 +19,22 @@ const Navbar = () => {
             <header className={`nav-v7 ${scrolled ? 'nav-v7--scrolled' : ''}`}>
                 <div className="nav-v7__shard">
                     <Link to="/" className="nav-v7__logo">
-                        <span className="logo-icon">✦</span>
+                        <img src="/assets/logo.png" alt="Epic Logo" className="nav-logo" />
                         <div className="logo-text">
-                            <span className="name">LUMIÈRE</span>
-                            <span className="sub">ORGANIZERS</span>
+                            <span className="name">EPIC</span>
+                            <span className="sub">EVENTS AND PROMOTION</span>
                         </div>
                     </Link>
 
                     <nav className="nav-v7__links">
                         <Link to="/" className={pathname === '/' ? 'active' : ''}>Home</Link>
                         <Link to="/services" className={pathname === '/services' ? 'active' : ''}>Services</Link>
-                        <Link to="/portfolio" className={pathname === '/portfolio' ? 'active' : ''}>Portfolio</Link>
+                        <Link to="/gallery" className={pathname === '/gallery' ? 'active' : ''}>Gallery</Link>
                         <Link to="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link>
                     </nav>
 
-                    <Link to="/contact" className="nav-v7__cta">
-                        <span>Inquire</span>
+                    <Link to="/portfolio" className="nav-v7__cta">
+                        <span>Portfolio</span>
                         <span className="arrow">→</span>
                     </Link>
                 </div>
@@ -48,10 +48,10 @@ const Navbar = () => {
             <div className={`nav-v7__drawer ${menuOpen ? 'open' : ''}`}>
                 <button className="drawer__close" onClick={() => setMenuOpen(false)}>✕</button>
                 <div className="drawer__links">
-                    {['Home', 'Services', 'Portfolio', 'Contact'].map((link, i) => (
+                    {['Home', 'Services', 'Gallery', 'Contact'].map((link, i) => (
                         <Link
                             key={link}
-                            to={link === 'Home' ? '/' : `/${link.toLowerCase()}`}
+                            to={link === 'Home' ? '/' : link === 'Gallery' ? '/gallery' : `/${link.toLowerCase()}`}
                             onClick={() => setMenuOpen(false)}
                             style={{ transitionDelay: `${0.1 + i * 0.1}s` }}
                         >
@@ -60,7 +60,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className="drawer__footer">
-                    <p>© 2026 LUMIÈRE ORGANIZERS</p>
+                    <p>© 2026 EPIC EVENTS AND PROMOTION</p>
                     <div className="drawer__socials">
                         <span>IG</span> · <span>LI</span> · <span>TW</span>
                     </div>

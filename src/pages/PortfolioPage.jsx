@@ -1,79 +1,115 @@
-import { useEffect, useState } from 'react';
-import Gallery from '../components/Gallery';
+import { useEffect } from 'react';
 import './PortfolioPage.css';
 
 const PortfolioPage = () => {
-    const [filter, setFilter] = useState('All');
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const filters = ['All', 'Logistics', 'Corporate', 'Private', 'International'];
-
     return (
-        <div className="portfolio-page">
-            <section className="portfolio-hero">
-                {/* Background Shards */}
-                <div className="portfolio-hero__bg-shards">
-                    <div className="bg-shard bg-shard--1"></div>
-                    <div className="bg-shard bg-shard--2"></div>
+        <div className="portfolio-v13">
+            {/* 1. Integrated Hero & Founder Profile */}
+            <section className="v13-hero section-pad">
+                <div className="wrap v13-hero__grid">
+                    <div className="v13-hero__content reveal">
+                        <span className="label">The Corporate Legacy</span>
+                        <h1 className="v13-h1">A Decade Of <br /><em className="italic-gold">Extraordinary</em> <br />Impact.</h1>
+                        <p className="v13-p">
+                            Founded by <strong className="gold">Ranbir Singh</strong> in 2023, Epic Events & Promotion stands as a pinnacle of event production, built on 12+ years of elite industry mastery across India.
+                        </p>
+                        <div className="v13-hero__metrics">
+                            <div className="v13-metric">
+                                <strong>1800+</strong>
+                                <span>Milestones</span>
+                            </div>
+                            <div className="v12-dash"></div>
+                            <div className="v13-metric">
+                                <strong>100%</strong>
+                                <span>Precision</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="v13-hero__img-shard reveal" style={{ transitionDelay: '0.2s' }}>
+                        <div className="shard-frame"></div>
+                        <img src="/assets/hero.png" alt="Ranbir Singh" className="v13-founder-img" />
+                        <div className="img-overlay-dark"></div>
+                        <div className="shard-tag">RANBIR SINGH · FOUNDER</div>
+                    </div>
                 </div>
+            </section>
 
+            {/* 2. Strategic Dashboard — Compact DNA */}
+            <section className="v13-dna section-pad">
                 <div className="wrap">
-                    <span className="label reveal">The Operational Archive</span>
-                    <h1 className="portfolio-h1 reveal">
-                        The Artifacts of <br />
-                        <em className="italic-gold">Successful</em> Production.
-                    </h1>
+                    <div className="v13-dna__header reveal">
+                        <h2 className="v13-h2">The <em className="italic-gold">Operational</em> DNA.</h2>
+                        <div className="v12-dash"></div>
+                    </div>
+                    <div className="v13-dna__grid">
+                        <div className="v13-dna__card reveal">
+                            <div className="card-top">
+                                <span className="label">Scale</span>
+                                <h3>Pan-India 360° Network</h3>
+                            </div>
+                            <p>Teams and resources spread across the country, ensuring seamless execution in any geography.</p>
+                        </div>
+                        <div className="v13-dna__card reveal" style={{ transitionDelay: '0.1s' }}>
+                            <div className="card-top">
+                                <span className="label">Method</span>
+                                <h3>Military-Grade Logistics</h3>
+                            </div>
+                            <p>High-pressure coordination synchronized with second-by-second technical mapping.</p>
+                        </div>
+                        <div className="v13-dna__card reveal" style={{ transitionDelay: '0.2s' }}>
+                            <div className="card-top">
+                                <span className="label">Execution</span>
+                                <h3>Strategic Planning</h3>
+                            </div>
+                            <p>Managing complexity from multi-day state summits to high-profile election campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <div className="portfolio-filters reveal">
-                        {filters.map(f => (
-                            <button
-                                key={f}
-                                className={`filter-btn ${filter === f ? 'active' : ''}`}
-                                onClick={() => setFilter(f)}
-                            >
-                                {f}
-                            </button>
+            {/* 3. Domains & Sectors — Compact Grid */}
+            <section className="v13-domains section-pad">
+                <div className="wrap v13-domains__grid reveal">
+                    <div className="v13-domains__title">
+                        <h2 className="v13-h2">Sectors Of <br /><em className="italic-gold">Mastery.</em></h2>
+                    </div>
+                    <div className="v13-domains__list">
+                        {['Government', 'Corporate', 'Weddings', 'Campaigns', 'Personal'].map((d, i) => (
+                            <div key={d} className="v13-domain-tag">
+                                <span className="dot">✦</span>
+                                <span>{d}</span>
+                            </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            <div className="portfolio-intro wrap reveal">
-                <div className="intro-meta">
-                    <div className="meta-item">
-                        <strong>Zero</strong>
-                        <span>Latencies</span>
-                    </div>
-                    <div className="meta-item">
-                        <strong>100%</strong>
-                        <span>Success Rate</span>
-                    </div>
-                    <div className="meta-item">
-                        <strong>Elite</strong>
-                        <span>Logistics</span>
+            {/* 4. Philosophy Quote — Clean & Modern */}
+            <section className="v13-philosophy reveal">
+                <div className="wrap">
+                    <div className="v13-phil-card glass">
+                        <h3 className="v13-phil-h3">
+                            "Our approach is simple — to turn every vision into a <em className="italic-gold">flawlessly</em> executed reality."
+                        </h3>
+                        <div className="pill-author">— Ranbir Singh, Founder</div>
                     </div>
                 </div>
-                <p className="intro-text">
-                    This archive is a record of operational precision. We detail the logistical challenges overcome in every project, from temporary structure engineering to global supply chain coordination.
-                </p>
-            </div>
+            </section>
 
-            <Gallery
-                filter={filter}
-                title="The Production Archive"
-                description="Explore our complete history of operational landmarks. Each project is a testament to flawless coordination."
-            />
-
-            <section className="portfolio-cta section-pad">
-                <div className="wrap glass portfolio-cta__banner reveal">
-                    <div className="cta-text">
-                        <h2>Secure your next event with <em className="italic-gold">operational</em> certainty.</h2>
-                        <p>Our senior project managers are available for global deployment.</p>
+            {/* 5. Final CTA — Streamlined */}
+            <section className="v13-cta section-pad">
+                <div className="wrap">
+                    <div className="v13-cta-inner reveal">
+                        <h2 className="v13-cta-h2">Initialize Your <em className="italic-gold">Next Milestone</em> with Us.</h2>
+                        <div className="v13-cta__btns">
+                            <a href="/contact" className="btn-dark">Consult Our Office ↗</a>
+                            <a href="/services" className="btn-outline-dark">Explore Services</a>
+                        </div>
                     </div>
-                    <button className="btn-dark">Consult Production</button>
                 </div>
             </section>
         </div>

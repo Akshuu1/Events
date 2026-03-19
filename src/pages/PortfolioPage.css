@@ -1,190 +1,198 @@
-.portfolio-page {
+.portfolio-v13 {
     background: var(--off-white);
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-.portfolio-hero {
-    padding: 120px 0 60px;
-    background: var(--blush);
-    text-align: center;
-    border-bottom: 1px solid var(--glass-border);
-    position: relative;
-    overflow: hidden;
+/* Tightening padding */
+.section-pad {
+    padding: 60px 0;
 }
 
-.portfolio-hero__bg-shards {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-
-.portfolio-hero__bg-shards .bg-shard {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    animation: floating 10s infinite ease-in-out;
-}
-
-.bg-shard--1 {
-    width: 180px;
-    height: 180px;
-    top: 20%;
-    left: -50px;
-    clip-path: polygon(10% 0%, 100% 15%, 90% 100%, 0% 85%);
-}
-
-.bg-shard--2 {
-    width: 120px;
-    height: 120px;
-    top: 40%;
-    right: -30px;
-    background: var(--green);
-    opacity: 0.1;
-    clip-path: polygon(0% 20%, 80% 0%, 100% 80%, 20% 100%);
-    animation-delay: -3s;
-}
-
-@keyframes floating {
-
-    0%,
-    100% {
-        transform: translate(0, 0) rotate(0);
-    }
-
-    50% {
-        transform: translate(15px, 25px) rotate(-3deg);
-    }
-}
-
-.portfolio-h1 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    margin-bottom: 3rem;
-}
-
-.portfolio-filters {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    padding: 10px 24px;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 50px;
-    font-family: var(--font-b);
-    font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-    background: var(--green);
-    border-color: var(--green);
-}
-
-.filter-btn.active {
-    background: var(--black);
-    color: white;
-    border-color: var(--black);
-}
-
-/* Intro Section */
-.portfolio-intro {
+.v13-hero__grid {
     display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-columns: 0.6fr 0.4fr;
     gap: 4rem;
-    padding: 6rem 5vw;
     align-items: center;
 }
 
-.intro-meta {
+.v13-h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.v13-p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--charcoal);
+    margin-bottom: 3rem;
+    max-width: 550px;
+}
+
+.v13-hero__metrics {
     display: flex;
+    align-items: center;
     gap: 3rem;
 }
 
-.meta-item {
+.v13-metric {
     display: flex;
     flex-direction: column;
 }
 
-.meta-item strong {
-    font-family: var(--font-h);
+.v13-metric strong {
     font-size: 2.5rem;
-    color: var(--green-deep);
+    color: var(--gold);
+    line-height: 1;
 }
 
-.meta-item span {
-    font-size: 0.75rem;
+.v13-metric span {
+    font-size: 0.7rem;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.v13-hero__img-shard {
+    position: relative;
+    height: 500px;
+}
+
+.shard-frame {
+    position: absolute;
+    inset: -15px;
+    border: 1px solid var(--gold);
+    clip-path: polygon(10% 0%, 100% 15%, 90% 100%, 0% 85%);
+    opacity: 0.3;
+}
+
+.v13-founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(5% 0%, 100% 10%, 95% 100%, 0% 90%);
+}
+
+.shard-tag {
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    background: var(--black);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    font-weight: 800;
     letter-spacing: 0.1em;
+}
+
+/* Dashboard */
+.v13-dna__header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.v13-dna__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.v13-dna__card {
+    background: white;
+    padding: 3rem 2.5rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.v13-dna__card:hover { border-color: var(--gold); transform: translateY(-5px); }
+
+.card-top { margin-bottom: 1.5rem; }
+
+.v13-dna__card h3 {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+.v13-dna__card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: var(--text-muted);
 }
 
-.intro-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--charcoal);
-    border-left: 2px solid var(--rose);
-    padding-left: 2.5rem;
-}
-
-/* CTA */
-.portfolio-cta__banner {
+/* Domains */
+.v13-domains__grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
-    border-radius: 32px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 3rem 0;
 }
 
-.cta-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.v13-domains__list {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
-.cta-text p {
-    font-size: 1.1rem;
+.v13-domain-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.v13-domain-tag .dot { color: var(--gold); }
+
+/* Philosophy */
+.v13-phil-card {
+    padding: 5rem 3rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.v13-phil-h3 {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.pill-author {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     color: var(--text-muted);
 }
 
+/* CTA */
+.v13-cta-inner {
+    text-align: center;
+}
+
+.v13-cta-h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 3rem;
+}
+
+.v13-cta__btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 @media (max-width: 1024px) {
-    .portfolio-hero {
-        padding: 100px 1rem 40px;
-    }
-
-    .portfolio-intro {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 4rem 1rem;
-        gap: 3rem;
-    }
-
-    .intro-meta {
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    .meta-item strong {
-        font-size: 2rem;
-    }
-
-    .intro-text {
-        border-left: none;
-        padding-left: 0;
-        border-top: 1px solid var(--rose);
-        padding-top: 2rem;
-    }
-
-    .portfolio-cta__banner {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-        padding: 3rem 1.5rem;
-    }
+    .v13-hero__grid, .v13-dna__grid { grid-template-columns: 1fr; }
+    .v13-hero__img-shard { order: -1; height: 350px; }
+    .v13-domains__grid { flex-direction: column; align-items: flex-start; gap: 2rem; }
+    .v13-domains__list { gap: 1.5rem; }
+    .v13-cta__btns { flex-direction: column; }
 }
