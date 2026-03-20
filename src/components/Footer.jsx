@@ -32,7 +32,7 @@ const Footer = () => (
                 <div className="footer-v11__shard reveal" style={{ transitionDelay: '0.1s' }}>
                     <h4 className="footer-v11__h4">Events</h4>
                     <ul className="footer-v11__list">
-                        {['Government Events', 'Corporate Gatherings', 'Grand Weddings', 'Election Campaigns', 'Personal Events'].map(item => (
+                        {['Mega Scale Productions', 'Corporate Gatherings', 'Grand Weddings', 'Brand Activations', 'Personal Events'].map(item => (
                             <li key={item}><Link to="/services">{item}</Link></li>
                         ))}
                     </ul>

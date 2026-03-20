@@ -7,10 +7,10 @@ const HighlightsEditorial = () => {
     const highlights = [
         {
             id: 1,
-            title: "Government Mastery",
-            tag: "State Logistics · PAN-INDIA",
+            title: "Large-Scale Public Events",
+            tag: "Mass Logistics · PAN-INDIA",
             img: "/assets/hero.png",
-            desc: "Managing high-security, high-impact events for state authorities with absolute operational precision."
+            desc: "Managing grand-scale public festivals and high-impact events with absolute operational precision and safety."
         },
         {
             id: 2,

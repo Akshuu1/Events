@@ -47,7 +47,7 @@ const Navbar = () => {
             <div className={`nav-v7__drawer ${menuOpen ? 'open' : ''}`}>
                 <button className="drawer__close" onClick={() => setMenuOpen(false)}>✕</button>
                 <div className="drawer__links">
-                    {['Home', 'Services', 'Gallery', 'Contact'].map((link, i) => (
+                    {['Home', 'Services', 'Portfolio', 'Gallery', 'Contact'].map((link, i) => (
                         <Link
                             key={link}
                             to={link === 'Home' ? '/' : link === 'Gallery' ? '/gallery' : `/${link.toLowerCase()}`}

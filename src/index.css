@@ -145,6 +145,10 @@ ul {
   color: var(--rose);
 }
 
+.rose, .gold {
+  color: var(--rose);
+}
+
 /* ─── Buttons ─── */
 .btn-dark {
   display: inline-flex;

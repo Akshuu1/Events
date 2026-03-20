@@ -20,7 +20,7 @@ const ServicesPage = () => {
                             Flawless Reality.
                         </h1>
                         <p className="services-hero__p reveal">
-                            Founded in 2023 by Ranbir Singh, we bring 12+ years of industry experience to every project. From grand government gatherings to intimate personal milestones, we ensure every event is extraordinary.
+                            Founded in 2023 by Ranbir Singh, we bring 12+ years of industry experience to every project. From grand-scale public festivals to intimate personal milestones, we ensure every event is extraordinary.
                         </p>
                     </div>
                 </div>
@@ -34,13 +34,13 @@ const ServicesPage = () => {
                             <div className="photo-tag">Mass-Scale Excellence</div>
                         </div>
                         <div className="featured-card__text">
-                            <h3>Pan-India Government & Corporate Scale</h3>
+                            <h3>Pan-India Mega Productions & Corporate Scale</h3>
                             <p>Managing events for 5,000+ attendees with a 360° network spread across the country. Our reach and expertise allow us to handle events of any scale with consistency.</p>
                             <ul className="spec-list">
-                                <li>✦ Government Ceremonies</li>
+                                <li>✦ Government Gala Events</li>
                                 <li>✦ High-Profile Corporate Summits</li>
-                                <li>✦ Strategic Election Campaigns</li>
-                                <li>✦ Mass-Scale Public Mobilization</li>
+                                <li>✦ Strategic Brand Activations</li>
+                                <li>✦ Election Campaign Management</li>
                             </ul>
                         </div>
                     </div>
@@ -74,8 +74,12 @@ const ServicesPage = () => {
 
             <section className="cta-banner reveal">
                 <div className="wrap">
-                    <h2>Ready to <em className="italic-gold">Organize</em> Your Experience?</h2>
-                    <button className="btn-dark">Access the Bureau</button>
+                    <div className="cta-banner__inner">
+                        <h2 className="cta-banner__h2">Ready to <em className="italic-gold">Organize</em> Your Experience?</h2>
+                        <div className="cta-banner__actions">
+                            <button className="btn-dark">Access the Bureau</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

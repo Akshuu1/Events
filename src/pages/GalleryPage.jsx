@@ -22,7 +22,7 @@ const GalleryPage = () => {
                 <div className="wrap g14-hero__content">
                     <span className="label reveal">The Visual Archive</span>
                     <h1 className="g14-h1 reveal">A Chronicle Of <br /><em className="italic-gold">Shattered</em> Expectations.</h1>
-                    <p className="g14-p reveal">Explore the visual history of Epic Events & Promotion. From state-level mobilization to the finest details of luxury celebrations.</p>
+                    <p className="g14-p reveal">Explore the visual history of Epic Events & Promotion. From large-scale public mobilization to the finest details of luxury celebrations.</p>
                 </div>
             </section>
 

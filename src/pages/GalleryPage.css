@@ -68,7 +68,7 @@
     margin-bottom: 1.5rem;
     position: relative;
     overflow: hidden;
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 
 .cat-card__img img {
@@ -88,7 +88,7 @@
 .cat-card__info span {
     font-size: 0.75rem;
     font-weight: 800;
-    color: var(--gold);
+    color: var(--rose);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }

@@ -8,13 +8,13 @@ const services = [
         title: 'Government Events',
         lead: 'National Scale',
         desc: 'Handling grand scale government events and high-profile gatherings with absolute precision and security.',
-        longDesc: 'Our government event management expertise ensures seamless execution for state-level functions, public gatherings, and diplomatic events. We manage complex logistics, security coordination, and massive spatial flows with professional consistency.',
+        longDesc: 'Our event management expertise ensures seamless execution for massive public functions, Govt. festivals, and national-level conventions. We manage complex logistics, technical mapping, and massive spatial flows with professional consistency.',
         location: 'Pan-India',
         footfall: '5,000 - 50,000+ Guests',
-        objective: 'Dignified Execution',
-        deliverables: ['Protocol Management', 'Security Coordination', 'Mass Crowd Logistics', 'Technical Infrastructure', 'VVIP Stage Management'],
+        objective: 'Mass Spatial Excellence',
+        deliverables: ['Mass Logistics Control', 'Infrastructure Mapping', 'Crowd Flow Management', 'Technical Production', 'Site Coordination'],
         galleryImages: ['/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(5% 0%, 100% 12%, 95% 100%, 0% 88%)',
+        poly: 'polygon(2% 0%, 100% 5%, 98% 100%, 0% 95%)',
         color: 'var(--green)'
     },
     {
@@ -28,7 +28,7 @@ const services = [
         objective: 'Brand Impact',
         deliverables: ['Mass Spatial Flow Design', 'Technical Production Mapping', 'Vendor Synchronization', 'Branded Environment Control', 'Real-time Event Analytics'],
         galleryImages: ['/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(0% 15%, 85% 0%, 100% 85%, 15% 100%)',
+        poly: 'polygon(0% 8%, 92% 0%, 100% 92%, 8% 100%)',
         color: 'var(--rose)'
     },
     {
@@ -42,7 +42,7 @@ const services = [
         objective: 'Soulful Celebrations',
         deliverables: ['Concept & Theme Design', 'Vendor Management', 'Guest Experience Coordination', 'Floral & Decor Artistry', 'On-site Execution Control'],
         galleryImages: ['/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(10% 0%, 100% 5%, 90% 100%, 0% 95%)',
+        poly: 'polygon(5% 0%, 100% 4%, 95% 100%, 0% 96%)',
         color: 'var(--cream)'
     },
     {
@@ -50,13 +50,13 @@ const services = [
         title: 'Election Campaigns',
         lead: 'Strategic Outreach',
         desc: 'Managing high-intensity election campaigns with a 360° network of resources and expertise.',
-        longDesc: 'We provide end-to-end event support for election campaigns, including rally management, public outreach programs, and strategic event planning to ensure your message reaches the masses effectively.',
-        location: 'Constituency Level',
+        longDesc: 'We provide end-to-end event support for brand activations and high-stakes election campaigns, including retail roadshows, public outreach programs, and strategic planning to ensure your message reaches the masses effectively.',
+        location: 'Urban & Tier-2 Hubs',
         footfall: 'Varies by Scale',
-        objective: 'Mass Mobilization',
-        deliverables: ['Rally Production', 'Publicity & Promotion', 'Resource Management', 'On-ground Logistics', 'Social Media Sync'],
+        objective: 'Brand Visibility',
+        deliverables: ['Event Production', 'Publicity & Promotion', 'Resource Management', 'On-ground Logistics', 'Social Media Sync'],
         galleryImages: ['/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(0% 0%, 90% 10%, 100% 100%, 10% 90%)',
+        poly: 'polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%)',
         color: 'var(--blush)'
     },
     {
@@ -71,7 +71,7 @@ const services = [
         deliverables: ['Custom Theme Planning', 'Catering Logistics', 'Entertainment Setup', 'Gift Management', 'Personalized Decor'],
         galleryImages: ['/assets/hero.png', '/assets/hero.png'],
         poly: 'polygon(5% 5%, 95% 0%, 100% 95%, 0% 100%)',
-        color: 'var(--gold)'
+        color: 'var(--rose)'
     },
 ];
 
@@ -103,11 +103,11 @@ const ServiceShard = ({ s }) => {
             style={{ clipPath: s.poly, background: s.id === '02' ? 'var(--black)' : 'white', cursor: 'pointer' }}
         >
             <div className="svc-shard__inner">
-                <span className="svc-shard__id" style={{ color: s.color }}>{s.id}</span>
+                <span className="svc-shard__id" style={{ color: s.id === '03' || s.id === '04' ? 'var(--rose)' : s.color, opacity: 0.6 }}>{s.id}</span>
                 <span className="label" style={{ color: s.id === '02' ? 'var(--rose)' : 'var(--green-deep)' }}>{s.lead}</span>
                 <h3 className="svc-shard__h3" style={{ color: s.id === '02' ? 'white' : 'var(--black)' }}>{s.title}</h3>
                 <p className="svc-shard__p" style={{ color: s.id === '02' ? 'rgba(255,255,255,0.6)' : 'var(--text-muted)' }}>{s.desc}</p>
-                <div className="svc-shard__link" style={{ color: s.color }}>Explore Detail →</div>
+                <div className="svc-shard__link" style={{ color: s.id === '02' ? s.color : 'var(--green-deep)' }}>Explore Detail →</div>
             </div>
         </div>
     );

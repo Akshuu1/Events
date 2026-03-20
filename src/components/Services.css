@@ -30,7 +30,7 @@
 }
 
 .svc-shard {
-    padding: 4rem 3rem;
+    padding: 4rem;
     min-height: 480px;
     position: relative;
     transition: transform 0.15s ease-out, box-shadow 0.4s ease;
@@ -48,12 +48,15 @@
 .svc-shard__inner {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .svc-shard__id {
     position: absolute;
-    top: -60px;
-    right: -20px;
+    top: -65px;
+    right: -25px;
     font-family: var(--font-h);
     font-size: 6rem;
     opacity: 0.15;

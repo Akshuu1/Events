@@ -4,7 +4,7 @@ import HighlightsEditorial from '../components/HighlightsEditorial';
 import './Home.css';
 
 const testimonials = [
-    { name: 'Aditi V.', event: 'Government Gala · Lucknow', quote: "Epic Events managed our large-scale government event with absolute professionalism. Their execution is flawless." },
+    { name: 'Aditi V.', event: 'Public Gala · Lucknow', quote: "Epic Events managed our large-scale public event with absolute professionalism. Their execution is flawless." },
     { name: 'Karan Mehra', event: 'Corporate Summit · Pan-India', quote: "The most seamless corporate production we've ever had. Their team is dedicated and highly skilled." },
     { name: 'Sara Khan', event: 'Royal Wedding · Wedding Planning', quote: "They turned our vision into a dream reality. Every detail was perfect, and the experience was truly memorable." },
 ];

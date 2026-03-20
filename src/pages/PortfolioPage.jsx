@@ -15,7 +15,7 @@ const PortfolioPage = () => {
                         <span className="label">The Corporate Legacy</span>
                         <h1 className="v13-h1">A Decade Of <br /><em className="italic-gold">Extraordinary</em> <br />Impact.</h1>
                         <p className="v13-p">
-                            Founded by <strong className="gold">Ranbir Singh</strong> in 2023, Epic Events & Promotion stands as a pinnacle of event production, built on 12+ years of elite industry mastery across India.
+                            Founded by <strong className="rose">Ranbir Singh</strong> in 2023, Epic Events & Promotion stands as a pinnacle of event production, built on 12+ years of elite industry mastery across India.
                         </p>
                         <div className="v13-hero__metrics">
                             <div className="v13-metric">
@@ -65,7 +65,7 @@ const PortfolioPage = () => {
                                 <span className="label">Execution</span>
                                 <h3>Strategic Planning</h3>
                             </div>
-                            <p>Managing complexity from multi-day state summits to high-profile election campaigns.</p>
+                            <p>Managing complexity from multi-day public summits to high-profile brand activations.</p>
                         </div>
                     </div>
                 </div>

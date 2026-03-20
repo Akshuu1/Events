@@ -42,7 +42,7 @@
 
 .v13-metric strong {
     font-size: 2.5rem;
-    color: var(--gold);
+    color: var(--rose);
     line-height: 1;
 }
 
@@ -62,8 +62,8 @@
 .shard-frame {
     position: absolute;
     inset: -15px;
-    border: 1px solid var(--gold);
-    clip-path: polygon(10% 0%, 100% 15%, 90% 100%, 0% 85%);
+    border: 1px solid var(--rose);
+    clip-path: polygon(5% 0%, 100% 10%, 95% 100%, 0% 90%);
     opacity: 0.3;
 }
 
@@ -71,7 +71,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    clip-path: polygon(5% 0%, 100% 10%, 95% 100%, 0% 90%);
+    clip-path: polygon(2% 0%, 100% 5%, 98% 100%, 0% 95%);
 }
 
 .shard-tag {
@@ -107,7 +107,7 @@
     transition: all 0.3s ease;
 }
 
-.v13-dna__card:hover { border-color: var(--gold); transform: translateY(-5px); }
+.v13-dna__card:hover { border-color: var(--rose); transform: translateY(-5px); }
 
 .card-top { margin-bottom: 1.5rem; }
 
@@ -148,7 +148,7 @@
     letter-spacing: 0.1em;
 }
 
-.v13-domain-tag .dot { color: var(--gold); }
+.v13-domain-tag .dot { color: var(--rose); }
 
 /* Philosophy */
 .v13-phil-card {

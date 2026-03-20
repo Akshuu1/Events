@@ -86,7 +86,7 @@
     font-size: 0.7rem;
     font-weight: 800;
     color: var(--green);
-    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
     transition: all 0.3s ease;
 }
 
@@ -169,7 +169,7 @@
     font-weight: 800;
     font-size: 0.8rem;
     text-transform: uppercase;
-    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
     transition: all 0.3s var(--ease-spring);
 }
 

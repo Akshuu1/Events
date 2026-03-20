@@ -115,10 +115,10 @@ const ContactPage = () => {
                                 <label>Event Type</label>
                                 <select name="type" defaultValue="" required>
                                     <option value="" disabled>Select Event Type</option>
-                                    <option>Government Event</option>
+                                    <option>Public Mega Event</option>
                                     <option>Corporate Gathering</option>
                                     <option>Wedding Planning</option>
-                                    <option>Election Campaign</option>
+                                    <option>Brand Activation</option>
                                     <option>Personal Event</option>
                                 </select>
                             </div>
