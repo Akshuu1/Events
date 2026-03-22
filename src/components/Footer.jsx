@@ -57,7 +57,9 @@ const Footer = () => (
                 <div className="footer-v11__shard footer-v11__shard--cta reveal" style={{ transitionDelay: '0.3s' }}>
                     <h4 className="footer-v11__h4">Inquiries</h4>
                     <p className="footer-v11__p">Ready to create something memorable?</p>
+                    <p className="footer-v11__p">Email us at</p>
                     <a href="mailto:epicevents92@gmail.com" className="footer-v11__email">epicevents92@gmail.com</a>
+                    <p className="footer-v11__p">Call us at</p>
                     <a href="tel:+917905219157" className="footer-v11__email" style={{ display: 'block', marginTop: '0.5rem' }}>+91 79052 19157</a>
                     <Link to="/contact" className="btn-v11-shard">
                         <span>Contact Us</span>
@@ -76,7 +78,9 @@ const Footer = () => (
                     <span>LUCKNOW, INDIA</span>
                 </div>
                 <div className="credits">
-                    CRAFTING EXTRAORDINARY EVENTS
+                    <a href="https://www.instagram.com/team.we_do/" target="_blank" rel="noopener noreferrer">
+                        DEVELOPED BY WEDO
+                    </a>
                 </div>
             </div>
         </div>

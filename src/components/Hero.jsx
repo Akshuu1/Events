@@ -24,7 +24,7 @@ const Hero = () => (
                     Turning every <br />
                     Vision into a <br />
                     <em className="italic-gold">Flawless</em> <br />
-                    Reality.
+                    Reality
                 </h1>
                 <p className="hero__p">
                     We don’t just manage events — we create experiences that people remember. Delivering excellence with 12+ years of rich industry expertise across India.

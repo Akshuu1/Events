@@ -149,7 +149,7 @@
     display: block;
     font-family: var(--font-h);
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--rose);
     transition: 0.3s;
 }

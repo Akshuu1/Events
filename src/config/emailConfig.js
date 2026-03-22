@@ -6,5 +6,5 @@ export const emailConfig = {
     SERVICE_ID: 'service_csdykl7',     // Get this from EmailJS Service section
     TEMPLATE_ID: 'template_pa4hntl',   // Get this from EmailJS Template section
     PUBLIC_KEY: 'udA6oixZjbCLYVme5',     // Get this from EmailJS Account section (Public Key)
-    RECIPIENT_EMAIL: 'akshatag.14feb@gmail.com'
+    RECIPIENT_EMAIL: 'epicevents92@gmail.com'
 };
