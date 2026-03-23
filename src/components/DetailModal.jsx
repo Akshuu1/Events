@@ -19,7 +19,7 @@ const DetailModal = ({ isOpen, item, onClose }) => {
                 <button className="modal-close-v12" onClick={onClose}>✕</button>
 
                 <div className="modal-hero">
-                    <img src={item.img || '/assets/hero.png'} alt={item.title} />
+                    <img src={item.img || '/assets/c1.jpg'} alt={item.title} />
                     <div className="modal-hero-overlay">
                         <div className="modal-hero-content">
                             <span className="label-v12">{item.tag || item.lead}</span>

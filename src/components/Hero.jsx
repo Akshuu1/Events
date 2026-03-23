@@ -48,8 +48,8 @@ const Hero = () => (
             <div className="hero__right">
                 {/* Main photo */}
                 <div className="hero__main-img">
-                    <img src="/assets/wedding.png" alt="Luxury ceremony" />
-                    <div className="hero__img-tag">Mehra–Singh Wedding, Udaipur 2025</div>
+                    <img src="/assets/w4.jpg" alt="Luxury ceremony" />
+                    <div className="hero__img-tag">Wedding, Udaipur 2025</div>
                 </div>
                 {/* Side photos */}
                 <div className="hero__sub-imgs">
@@ -64,7 +64,7 @@ const Hero = () => (
                         onMouseMove={e => { const r = e.currentTarget.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; requestAnimationFrame(() => { e.currentTarget.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`; }); }}
                         onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                     >
-                        <img src="/assets/hero.png" alt="Private event" />
+                        <img src="/assets/a1.jpg" alt="Private event" />
                         <div className="sub-label">Private Celebration</div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const HighlightsEditorial = () => {
             id: 1,
             title: "Large-Scale Public Events",
             tag: "Mass Logistics · PAN-INDIA",
-            img: "/assets/hero.png",
+            img: "/assets/c5.jpg",
             desc: "Managing grand-scale public festivals and high-impact events with absolute operational precision and safety."
         },
         {
@@ -23,7 +23,7 @@ const HighlightsEditorial = () => {
             id: 3,
             title: "Royal Weddings",
             tag: "Bespoke Planning · 12Y+ EXP",
-            img: "/assets/wedding.png",
+            img: "/assets/w5.jpg",
             desc: "Turning grand visions into timeless realities with meticulous attention and elite hospitality."
         }
     ];

@@ -12,8 +12,9 @@ const services = [
         location: 'Pan-India',
         footfall: '5,000 - 50,000+ Guests',
         objective: 'Mass Spatial Excellence',
+        img: '/assets/c1.jpg',
         deliverables: ['Mass Logistics Control', 'Infrastructure Mapping', 'Crowd Flow Management', 'Technical Production', 'Site Coordination'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png'],
+        galleryImages: ['/assets/c1.jpg', '/assets/c2.jpg'],
         poly: 'polygon(2% 0%, 100% 5%, 98% 100%, 0% 95%)',
         color: 'var(--green)'
     },
@@ -41,8 +42,9 @@ const services = [
         location: 'Premium Destinations',
         footfall: '200 - 2,000 Guests',
         objective: 'Soulful Celebrations',
+        img: '/assets/w4.jpg',
         deliverables: ['Concept & Theme Design', 'Vendor Management', 'Guest Experience Coordination', 'Floral & Decor Artistry', 'On-site Execution Control'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png'],
+        galleryImages: ['/assets/w1.jpeg', '/assets/w2.webp', '/assets/w3.jpeg', '/assets/w4.jpg', '/assets/w5.jpg', '/assets/w6.jpg'],
         poly: 'polygon(5% 0%, 100% 4%, 95% 100%, 0% 96%)',
         color: 'var(--cream)'
     },
@@ -55,8 +57,9 @@ const services = [
         location: 'Urban & Tier-2 Hubs',
         footfall: 'Varies by Scale',
         objective: 'Brand Visibility',
+        img: '/assets/c3.jpg',
         deliverables: ['Event Production', 'Publicity & Promotion', 'Resource Management', 'On-ground Logistics', 'Social Media Sync'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png'],
+        galleryImages: ['/assets/c1.jpg', '/assets/c2.jpg', '/assets/c3.jpg'],
         poly: 'polygon(0% 0%, 95% 5%, 100% 100%, 5% 95%)',
         color: 'var(--blush)'
     },
@@ -69,8 +72,9 @@ const services = [
         location: 'Lucknow & Beyond',
         footfall: '20 - 500 Guests',
         objective: 'Memorable Milestones',
+        img: '/assets/a1.jpg',
         deliverables: ['Custom Theme Planning', 'Catering Logistics', 'Entertainment Setup', 'Gift Management', 'Personalized Decor'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png'],
+        galleryImages: ['/assets/a1.jpg', '/assets/b1.webp', '/assets/b2.avif'],
         poly: 'polygon(5% 5%, 95% 0%, 100% 95%, 0% 100%)',
         color: 'var(--rose)'
     },

@@ -17,7 +17,7 @@
 .g14-hero__bg {
     position: absolute;
     inset: 0;
-    background: url('/assets/hero.png') center/cover no-repeat;
+    background: url('/assets/c1.jpg') center/cover no-repeat;
     opacity: 0.3;
     transform: scale(1.1);
 }
