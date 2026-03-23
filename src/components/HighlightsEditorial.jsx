@@ -68,7 +68,7 @@ const HighlightsEditorial = () => {
                             <img 
                                 key={h.id} 
                                 src={h.img} 
-                                alt={h.title} 
+                                alt={`${h.title} - ${h.tag} Event Excellence by Epic Events`} 
                                 className={`display-img ${activeIndex === i ? 'visible' : ''}`}
                             />
                         ))}

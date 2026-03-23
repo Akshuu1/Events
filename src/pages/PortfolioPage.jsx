@@ -31,7 +31,7 @@ const PortfolioPage = () => {
                     </div>
                     <div className="v13-hero__img-shard reveal" style={{ transitionDelay: '0.2s' }}>
                         <div className="shard-frame"></div>
-                        <img src="/assets/profile.jpg" alt="Ranbir Singh" className="v13-founder-img" />
+                        <img src="/assets/profile.jpg" alt="Ranbir Singh - Founder of Epic Events & Promotion" className="v13-founder-img" />
                         <div className="img-overlay-dark"></div>
                         <div className="shard-tag">RANBIR SINGH · FOUNDER</div>
                     </div>

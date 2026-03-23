@@ -33,7 +33,7 @@ const GalleryPage = () => {
                         {categories.map((cat, i) => (
                             <div key={cat.name} className="g14-cat-card reveal" style={{ transitionDelay: `${i * 0.1}s` }}>
                                 <div className="cat-card__img">
-                                    <img src={cat.img} alt={cat.name} />
+                                    <img src={cat.img} alt={`${cat.name} Event Management Portfolio - Epic Events`} />
                                     <div className="cat-card__overlay"></div>
                                 </div>
                                 <div className="cat-card__info">

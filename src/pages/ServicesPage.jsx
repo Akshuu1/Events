@@ -30,7 +30,7 @@ const ServicesPage = () => {
                 <div className="wrap">
                     <div className="featured-card glass">
                         <div className="featured-card__img">
-                            <img src="/assets/c1.jpg" alt="Government Events" />
+                            <img src="/assets/m1.jpg" alt="Mass-Scale Government Event Execution by Epic Events and Promotion" />
                             <div className="photo-tag">Mass-Scale Excellence</div>
                         </div>
                         <div className="featured-card__text">
