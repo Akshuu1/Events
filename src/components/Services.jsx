@@ -26,8 +26,9 @@ const services = [
         location: 'Major Business Hubs',
         footfall: '100 - 5,000 Guests',
         objective: 'Brand Impact',
+        img: '/assets/c1.jpg',
         deliverables: ['Mass Spatial Flow Design', 'Technical Production Mapping', 'Vendor Synchronization', 'Branded Environment Control', 'Real-time Event Analytics'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png'],
+        galleryImages: ['/assets/c1.jpg', '/assets/c2.jpg', '/assets/c3.jpg', '/assets/c4.jpg', '/assets/c5.jpg', '/assets/c6.jpg', '/assets/c7.jpg'],
         poly: 'polygon(0% 8%, 92% 0%, 100% 92%, 8% 100%)',
         color: 'var(--rose)'
     },

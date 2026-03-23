@@ -4,59 +4,45 @@ import './Gallery.css';
 const projects = [
     {
         id: 1,
-        title: 'Royal Palace Logistics',
-        sub: 'Udaipur, Rajasthan',
-        tag: 'Logistics',
-        location: 'City Palace, Udaipur',
-        footfall: '1,200 Guests',
-        objective: 'Multi-Venue Sync',
-        longDesc: 'Managing a grand palace wedding across multiple historic venues in Udaipur. Our team handled the fleet logistics, high-security protocols, and synchronized production mapping for 1,200 international guests.',
-        deliverables: ['Fleet Grid Management', 'Technical Site Audit', 'Jurisdiction Control'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(0% 5%, 95% 0%, 100% 90%, 5% 100%)',
+        title: 'Lucknow Deep Utsav',
+        sub: 'Lucknow, Uttar Pradesh',
+        tag: 'Government',
+        location: 'Lucknow Shore & Grounds',
+        footfall: '700+ Stalls',
+        objective: 'High-Impact Cultural Execution',
+        longDesc: 'A prestigious large-scale cultural celebration, the Lucknow Deep Utsav stands as a testament to our excellence in high-impact event execution. Delivered within an impressive 24-hour timeframe, our team seamlessly curated and installed over 700+ stalls, ensuring flawless coordination and an elevated visitor experience. The event further featured the creation of an exclusive stage and secured passage for the Honorable Chief Minister, Shri Yogi Adityanath, executed with the highest standards of protocol, precision, and sophistication.',
+        deliverables: ['700+ Stall Curation', 'CM Protocol Management', '24HR Rapid Deployment'],
+        galleryImages: ['/assets/c1.jpg', '/assets/c1.jpg', '/assets/c1.jpg'],
+        poly: 'polygon(0% 5%, 95% 0%, 100% 95%, 5% 100%)',
         z: '80px'
     },
     {
         id: 2,
-        title: 'Industrial Tech Summit',
-        sub: 'Mumbai, Digital India',
-        tag: 'Corporate',
-        location: 'Jio World Centre',
-        footfall: '5,500+ Attendees',
-        objective: 'Zero-Downtime Base',
-        longDesc: 'Organizing the technical base for a massive global tech summit. We engineered the spatial flow for 5,500 people and managed a complex AV mesh network spanning 6 halls with 100% uptime.',
-        deliverables: ['Mass Spatial Flow', 'AV Mesh Infrastructure', 'Technical Crisis Unit'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(10% 0%, 100% 5%, 90% 100%, 0% 95%)',
+        title: 'Svanidhi Mahotsav',
+        sub: 'Lucknow, Uttar Pradesh',
+        tag: 'Government',
+        location: 'Municipal Grounds',
+        footfall: '300+ Stalls',
+        objective: 'Efficiency & Precision',
+        longDesc: 'A prominent government-led initiative, the Svanidhi Mahotsav was successfully executed by our team within a remarkably short timeframe. Demonstrating efficiency and precision, we managed the complete event setup, including the seamless arrangement of 300+ stalls. The event was enhanced with thoughtfully curated decor and aesthetics, creating a vibrant and engaging environment aligned with the spirit of the initiative.',
+        deliverables: ['300+ Stall Management', 'Curated Theme Decor', 'Rapid Infrastructure Setup'],
+        galleryImages: ['/assets/c2.jpg', '/assets/c2.jpg', '/assets/c2.jpg'],
+        poly: 'polygon(5% 0%, 100% 5%, 95% 100%, 0% 95%)',
         z: '50px'
     },
     {
         id: 3,
-        title: 'The Desert Mirage',
-        sub: 'Dubai, UAE',
-        tag: 'Destination',
-        location: 'Al Maha Desert, Dubai',
-        footfall: '300 VIP Guests',
-        objective: 'Remote Site Mastery',
-        longDesc: 'Mobilizing an elite private production deep in the Dubai desert. This required architectural self-sufficiency, including custom water, power, and high-fidelity climate control for 300 guests on sand.',
-        deliverables: ['Remote Grid Deployment', 'Resource Logistics', 'Sand-Stabilized Structures'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(0% 15%, 85% 0%, 100% 85%, 15% 100%)',
-        z: '60px'
-    },
-    {
-        id: 4,
-        title: 'The Fashion Gala',
-        sub: 'London, UK',
-        tag: 'International',
-        location: 'Somerset House, London',
-        footfall: '800 Press & Guests',
-        objective: 'High-Fidelity Timing',
-        longDesc: 'Organizing the London Fashion Gala with second-by-second timing precision. Our team managed international vendor mobilization and high-profile guest logistics under intense media surveillance.',
-        deliverables: ['Media Protocol Grid', 'International Mobilization', 'Timing Synchronization'],
-        galleryImages: ['/assets/hero.png', '/assets/hero.png', '/assets/hero.png'],
-        poly: 'polygon(5% 0%, 100% 10%, 95% 100%, 0% 90%)',
-        z: '70px'
+        title: 'Army Diwas Celebration',
+        sub: 'Lucknow, Defense Sector',
+        tag: 'Defense',
+        location: 'Cantonment Area',
+        footfall: '36,000 ft Platform',
+        objective: 'Precision & Discipline',
+        longDesc: 'A prestigious and high-security event, the Army Diwas Celebration highlighted our capability to execute large-scale, defense-level projects with precision and discipline. Our team successfully constructed a massive 36,000 running feet platform, demonstrating exceptional planning and execution strength. The event was honored by the presence of the Honorable Defence Minister and Honorable Chief Minister, Shri Yogi Adityanath, where we ensured seamless arrangements adhering to strict security protocols. Additionally, we efficiently designed and built daily operational bunkers, showcasing our adaptability and expertise in handling complex, time-sensitive infrastructure requirements.',
+        deliverables: ['36,000 ft Platform Construction', 'High-Security VIP Logistics', 'Operational Bunker Design'],
+        galleryImages: ['/assets/c7.jpg', '/assets/c7.jpg', '/assets/c7.jpg'],
+        poly: 'polygon(0% 2%, 100% 0%, 98% 100%, 2% 98%)',
+        z: '100px'
     }
 ];
 
@@ -88,7 +74,7 @@ const GalleryShard = ({ p }) => {
             style={{ clipPath: p.poly, cursor: 'pointer' }}
         >
             <div className="exhibit-shard__img">
-                <img src={`/assets/hero.png`} alt={p.title} />
+                <img src={p.galleryImages[0]} alt={p.title} />
                 <div className="shard-overlay"></div>
             </div>
             <div className="exhibit-shard__content">

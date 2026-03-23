@@ -59,12 +59,13 @@
 
 .exhibit-shard__content {
     position: absolute;
-    bottom: 40px;
-    left: 40px;
-    right: 40px;
+    bottom: 50px;
+    left: 45px;
+    right: 45px;
     color: white;
     z-index: 2;
     transform: translateZ(40px);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .shard-tag {

@@ -16,7 +16,7 @@ const HighlightsEditorial = () => {
             id: 2,
             title: "Corporate Summits",
             tag: "Luxury Sync · 360° NETWORK",
-            img: "/assets/corporate.png",
+            img: "/assets/c7.jpg",
             desc: "Seamless coordination for global industry leaders across multiple locations with synchronized mapping."
         },
         {

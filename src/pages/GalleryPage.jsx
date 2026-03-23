@@ -9,7 +9,7 @@ const GalleryPage = () => {
 
     const categories = [
         { name: 'Government', count: '120+ Events', img: '/assets/hero.png' },
-        { name: 'Corporate', count: '450+ Events', img: '/assets/corporate.png' },
+        { name: 'Corporate', count: '450+ Events', img: '/assets/c6.jpg' },
         { name: 'Weddings', count: '800+ Events', img: '/assets/wedding.png' },
         { name: 'Campaigns', count: '300+ Events', img: '/assets/hero.png' }
     ];
