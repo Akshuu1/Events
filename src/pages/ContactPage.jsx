@@ -23,7 +23,9 @@ const ContactPage = () => {
         const x = (e.clientX - r.left) / r.width - 0.5;
         const y = (e.clientY - r.top) / r.height - 0.5;
         requestAnimationFrame(() => {
-            el.style.transform = `perspective(2000px) rotateY(${x * 20}deg) rotateX(${-y * 20}deg)`;
+            if (el && el.style) {
+                el.style.transform = `perspective(2000px) rotateY(${x * 20}deg) rotateX(${-y * 20}deg)`;
+            }
         });
     };
 
@@ -53,7 +55,7 @@ const ContactPage = () => {
             emailConfig.TEMPLATE_ID,
             formRef.current,
             emailConfig.PUBLIC_KEY
-        ).then((result) => {
+        ).then(() => {
             setStatus('success');
             e.target.reset();
         }, (error) => {

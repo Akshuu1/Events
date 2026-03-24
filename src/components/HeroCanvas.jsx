@@ -71,13 +71,14 @@ const HeroCanvas = () => {
         window.addEventListener('resize', onResize);
 
         let raf;
-        const clock = new THREE.Clock();
+        const timer = new THREE.Timer();
+        
         const posAttr = waveGeo.attributes.position;
-        const posAttr2 = waveGeo2.attributes.position;
 
         const animate = () => {
             raf = requestAnimationFrame(animate);
-            const t = clock.getElapsedTime();
+            timer.update();
+            const t = timer.getElapsed();
 
             /* Wave green mesh */
             for (let i = 0; i <= seg; i++) {

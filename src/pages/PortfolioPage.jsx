@@ -78,7 +78,7 @@ const PortfolioPage = () => {
                         <h2 className="v13-h2">Sectors Of <br /><em className="italic-gold">Mastery.</em></h2>
                     </div>
                     <div className="v13-domains__list">
-                        {['Government', 'Corporate', 'Weddings', 'Campaigns', 'Personal'].map((d, i) => (
+                        {['Government', 'Corporate', 'Weddings', 'Campaigns', 'Personal'].map((d) => (
                             <div key={d} className="v13-domain-tag">
                                 <span className="dot">✦</span>
                                 <span>{d}</span>

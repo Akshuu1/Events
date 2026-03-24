@@ -52,6 +52,7 @@ const projects = [
 const GalleryShard = ({ p }) => {
     const ref = useRef(null);
     const onMove = (e) => {
+        if (!ref.current) return;
         const r = ref.current.getBoundingClientRect();
         const x = (e.clientX - r.left) / r.width - 0.5;
         const y = (e.clientY - r.top) / r.height - 0.5;
