@@ -36,12 +36,11 @@ const Navbar = () => {
                         <span>Portfolio</span>
                         <span className="arrow">→</span>
                     </Link>
+                    <button className="nav-v7__burger" onClick={() => setMenuOpen(!menuOpen)}>
+                        <div className={menuOpen ? 'open' : ''}></div>
+                        <div className={menuOpen ? 'open' : ''}></div>
+                    </button>
                 </div>
-
-                <button className="nav-v7__burger" onClick={() => setMenuOpen(!menuOpen)}>
-                    <div className={menuOpen ? 'open' : ''}></div>
-                    <div className={menuOpen ? 'open' : ''}></div>
-                </button>
             </header>
 
             <div className={`nav-v7__drawer ${menuOpen ? 'open' : ''}`}>

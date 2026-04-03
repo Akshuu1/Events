@@ -54,14 +54,28 @@ const Hero = () => (
                 {/* Side photos */}
                 <div className="hero__sub-imgs">
                     <div className="hero__sub-img hero__sub-img--a"
-                        onMouseMove={e => { const r = e.currentTarget.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; requestAnimationFrame(() => { e.currentTarget.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`; }); }}
+                        onMouseMove={e => { 
+                            const target = e.currentTarget;
+                            const r = target.getBoundingClientRect(); 
+                            const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; 
+                            requestAnimationFrame(() => { 
+                                if (target) target.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`; 
+                            }); 
+                        }}
                         onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                     >
                         <img src="/assets/c4.jpg" alt="Corporate gala" />
                         <div className="sub-label">Corporate Gala</div>
                     </div>
                     <div className="hero__sub-img hero__sub-img--b"
-                        onMouseMove={e => { const r = e.currentTarget.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; requestAnimationFrame(() => { e.currentTarget.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`; }); }}
+                        onMouseMove={e => { 
+                            const target = e.currentTarget;
+                            const r = target.getBoundingClientRect(); 
+                            const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; 
+                            requestAnimationFrame(() => { 
+                                if (target) target.style.transform = `perspective(700px) rotateY(${x * 14}deg) rotateX(${-y * 14}deg) scale(1.02)`; 
+                            }); 
+                        }}
                         onMouseLeave={e => { e.currentTarget.style.transform = ''; }}
                     >
                         <img src="/assets/a1.jpg" alt="Private event" />
