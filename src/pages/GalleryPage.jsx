@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Gallery from '../components/Gallery';
 import './GalleryPage.css';
 
 const GalleryPage = () => {
@@ -43,17 +42,6 @@ const GalleryPage = () => {
                             </div>
                         ))}
                     </div>
-                </div>
-            </section>
-
-            {/* 3. The Main Gallery — Staggered Display */}
-            <section className="g14-main section-pad">
-                <div className="wrap">
-                    <div className="g14-main__head reveal">
-                        <span className="label">The Full Archive</span>
-                        <h2 className="g14-h2">Global <em className="italic-gold">Perspectives.</em></h2>
-                    </div>
-                    <Gallery />
                 </div>
             </section>
 
