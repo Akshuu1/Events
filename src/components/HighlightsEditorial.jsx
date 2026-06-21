@@ -9,21 +9,21 @@ const HighlightsEditorial = () => {
             id: 1,
             title: "Large-Scale Public Events",
             tag: "Mass Logistics · PAN-INDIA",
-            img: "/assets/c5.jpg",
+            img: "/assets/corp_detail_1.png",
             desc: "Managing grand-scale public festivals and high-impact events with absolute operational precision and safety."
         },
         {
             id: 2,
             title: "Corporate Summits",
             tag: "Luxury Sync · 360° NETWORK",
-            img: "/assets/c7.jpg",
+            img: "/assets/corp_detail_2.png",
             desc: "Seamless coordination for global industry leaders across multiple locations with synchronized mapping."
         },
         {
             id: 3,
             title: "Royal Weddings",
             tag: "Bespoke Planning · 12Y+ EXP",
-            img: "/assets/w5.jpg",
+            img: "/assets/wedding_couple.png",
             desc: "Turning grand visions into timeless realities with meticulous attention and elite hospitality."
         }
     ];

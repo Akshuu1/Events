@@ -7,10 +7,10 @@ const GalleryPage = () => {
     }, []);
 
     const categories = [
-        { name: 'Government', count: '120+ Events', img: '/assets/c1.jpg' },
-        { name: 'Corporate', count: '450+ Events', img: '/assets/c6.jpg' },
-        { name: 'Weddings', count: '800+ Events', img: '/assets/w2.webp' },
-        { name: 'Campaigns', count: '300+ Events', img: '/assets/c3.jpg' }
+        { name: 'Government', count: '120+ Events', img: '/assets/gov_main.png' },
+        { name: 'Corporate', count: '450+ Events', img: '/assets/corp_main.png' },
+        { name: 'Weddings', count: '800+ Events', img: '/assets/wedding_reception.png' },
+        { name: 'Campaigns', count: '300+ Events', img: '/assets/campaign_main.png' }
     ];
 
     return (
