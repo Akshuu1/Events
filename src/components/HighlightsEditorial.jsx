@@ -9,7 +9,7 @@ const HighlightsEditorial = () => {
             id: 1,
             title: "Large-Scale Public Events",
             tag: "Mass Logistics · PAN-INDIA",
-            img: "/assets/corp_detail_1.png",
+            img: "/assets/mass_scale_gov.png",
             desc: "Managing grand-scale public festivals and high-impact events with absolute operational precision and safety."
         },
         {
@@ -23,7 +23,7 @@ const HighlightsEditorial = () => {
             id: 3,
             title: "Royal Weddings",
             tag: "Bespoke Planning · 12Y+ EXP",
-            img: "/assets/wedding_couple.png",
+            img: "/assets/w1.jpeg",
             desc: "Turning grand visions into timeless realities with meticulous attention and elite hospitality."
         }
     ];
@@ -34,11 +34,11 @@ const HighlightsEditorial = () => {
                 <div className="h-showcase__sidebar reveal">
                     <span className="label">Managed Highlights</span>
                     <h2 className="h-showcase__h2">Artifacts Of <br /><em className="italic-gold">Excellence.</em></h2>
-                    
+
                     <div className="h-showcase__list">
                         {highlights.map((h, i) => (
-                            <div 
-                                key={h.id} 
+                            <div
+                                key={h.id}
                                 className={`h-showcase__item ${activeIndex === i ? 'active' : ''}`}
                                 onMouseEnter={() => setActiveIndex(i)}
                             >
@@ -65,10 +65,10 @@ const HighlightsEditorial = () => {
                             <div className="d-shard d-shard--2"></div>
                         </div>
                         {highlights.map((h, i) => (
-                            <img 
-                                key={h.id} 
-                                src={h.img} 
-                                alt={`${h.title} - ${h.tag} Event Excellence by Epic Events`} 
+                            <img
+                                key={h.id}
+                                src={h.img}
+                                alt={`${h.title} - ${h.tag} Event Excellence by Epic Events`}
                                 className={`display-img ${activeIndex === i ? 'visible' : ''}`}
                             />
                         ))}
